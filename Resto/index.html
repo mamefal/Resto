@@ -20,7 +20,7 @@
         <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
         <li><a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        <a href="reservation.html" class="btn-reserve"onclick="toggleMenu();">Reservation</a>
+        <li><a href="#reservation" class="btn-reserve"onclick="toggleMenu();">Reservation</a></li>
     </ul>
 </header>
 <section class="banniere" id="banniere">
@@ -28,7 +28,7 @@
         <h2>Que Des Plats Délicieux</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <a href="#" class="btn1">Notre Menu</a>
-        <a href="reservation.html" class="btn2">Reservation</a>
+        <a href="#" class="btn2">Reservation</a>
     </div>
 </section>
 <section class="apropos" id="apropos">
@@ -40,9 +40,27 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
         </div>
+
         <div class="col50">
             <div class="img">
-                <img src="./images/plat3.jpg" alt="image">
+                <slider>
+                    <slide>
+                        <img src="./images/plat3.jpg" alt="image"> 
+                    </slide>
+                    <slide>
+                      <img src="./images/beef-desktop-tablet.jpg" alt="image">
+                    </slide>
+                    <slide>
+                      <img src="./images/salmon-desktop-tablet.jpg">  
+                    </slide>
+                    <slide>
+                       <img src="./images/chocolate-mobile.jpg" alt="image"> 
+                    </slide>
+                    <slide>
+                        <img src="./images/locally-sourced-mobile.jpg" alt="image"> 
+                     </slide>
+                </slider>
+                
             </div>
         </div>
     </div>
@@ -220,14 +238,12 @@
          </div>
      </div>
  </section>
- <section class="reservationform">
+ <section class="reservationform" id="reservation">
     <div >
-       
-    
-          <p class="resatext">We can’t wait to host you. If you have any special requirements <br>please feel free to 
+       <p class="resatext">We can’t wait to host you. If you have any special requirements <br>please feel free to 
              call on the phone number below. We’ll be happy to accommodate you.</p>
             <button>Reservez place</button>
-      </div>
+    </div>
           <div class="reservation">
             <form>
               <input type="text" name="prenom" placeholder="Votre prénom"><br>
@@ -239,8 +255,8 @@
               <input type="nb" placeholder="À combien serez-vous?*" required><br>
               <textarea name="commentaire" id="" cols="50" rows="5" placeholder="Une demande particulière ? "></textarea><br>
               <input type="submit">       
-             </form>
-
+            </form>
+          </div>
  </section>
  <div class="copyright">
      <p>copyright 2022 <a href="#">Queen matou</a>instagram. Tous droits reservé</p>
